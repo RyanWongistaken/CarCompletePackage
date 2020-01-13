@@ -1,3 +1,10 @@
+////////////////////////////////////////////////////////////////
+// 
+// Author: Ryan Wong 
+// Date Modified: 1-13-2020
+// Desc: Drive system functions
+//
+////////////////////////////////////////////////////////////////
 #define PI
 #define TRUE 1
 
@@ -6,7 +13,7 @@
 
 CTurning::CTurning()
 {
-	Car.set_data(SERVO, PWMA, 157);//CONTROL THE SPEED (GPIO2)
+	Car.set_data(SERVO, PWMA, 150);//CONTROL THE SPEED (GPIO2)
 	Car.set_data(SERVO, PWMB, 152);//CONTROL THE SPEED (GPIO17)
 	//wheel connected to channel A
 	Car.set_data(DIGITAL, AIN1, 0);//GPIO3 ---> Ai1
@@ -23,8 +30,8 @@ CTurning::~CTurning()
 
 void CTurning::forward()
 {
-	Car.set_data(SERVO, PWMA, 148);//CONTROL THE SPEED (GPIO2)
-	Car.set_data(SERVO, PWMB, 150);//CONTROL THE SPEED (GPIO17)
+	Car.set_data(SERVO, PWMA, 150);//CONTROL THE SPEED (GPIO2)
+	Car.set_data(SERVO, PWMB, 152);//CONTROL THE SPEED (GPIO17)
 	//wheel connected to channel A
 	Car.set_data(DIGITAL, AIN1, 1);//GPIO3 ---> Ai1
 	Car.set_data(DIGITAL, AIN2, 0);//GPIO4 ---> Ai2
@@ -60,8 +67,8 @@ void CTurning::stop()
 
 void CTurning::left()
 {
-	Car.set_data(SERVO, PWMA, 175);//CONTROL THE SPEED (GPIO2)
-	Car.set_data(SERVO, PWMB, 157);//CONTROL THE SPEED (GPIO17)
+	Car.set_data(SERVO, PWMA, 150);//CONTROL THE SPEED (GPIO2)
+	Car.set_data(SERVO, PWMB, 152);//CONTROL THE SPEED (GPIO17)
 	//wheel connected to channel A
 	Car.set_data(DIGITAL, AIN1, 1);//GPIO3 ---> Ai1
 	Car.set_data(DIGITAL, AIN2, 0);//GPIO4 ---> Ai2
@@ -72,7 +79,7 @@ void CTurning::left()
 
 void CTurning::right()
 {
-	Car.set_data(SERVO, PWMA, 180);//CONTROL THE SPEED (GPIO2)
+	Car.set_data(SERVO, PWMA, 150);//CONTROL THE SPEED (GPIO2)
 	Car.set_data(SERVO, PWMB, 152);//CONTROL THE SPEED (GPIO17)
 	//wheel connected to channel A
 	Car.set_data(DIGITAL, AIN1, 0);//GPIO3 ---> Ai1

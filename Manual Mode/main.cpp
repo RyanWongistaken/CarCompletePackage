@@ -1,3 +1,10 @@
+////////////////////////////////////////////////////////////////
+// 
+// Author: Ryan Wong 
+// Date Modified: 1-13-2020
+// Desc: Manual control system for the RC car
+//
+////////////////////////////////////////////////////////////////
 #define PI
 #define TRUE 1
 
@@ -160,7 +167,7 @@ int main(int argc, char* argv[])
 			if (command_list[0] == "q" || command_list[0] == "Q")
 			{
 				car.stop();
-				cout << "ayy yo hold up\n";
+				cout << "Stopping\n";
 			}
 			if (command_list[0] == "e" || command_list[0] == "E")
 			{

@@ -1,13 +1,12 @@
-/**
-*
-* @brief Contains the serial object and two pulic methods
-*
-*contains the serial port object Serial and two public methods which implement the serial
-*communication protocol outlined in the course lecture notes
-*
-* @author Ryan Wong
-*
-*/
+////////////////////////////////////////////////////////////////
+// 
+// Author: Ryan Wong 
+// Date Modified: 1-13-2020
+// Desc: contains the serial port object Serial and two public 
+// 		 methods which implement the serial communication protocol 
+//		 outlined in the course lecture notes
+//
+/////////////////////////////////////////////////////////////////
 
 #pragma once	
 //#define WIN4618
